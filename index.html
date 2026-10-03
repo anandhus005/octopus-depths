@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ABYSSAL — A Deep Ocean Expedition</title>
+<meta name="description" content="Dive from the sunlit surface to the abyss and guide a living octopus with your cursor.">
+<meta name="theme-color" content="#08233f">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head><body>
+<canvas id="c" role="img" aria-label="Interactive underwater scene with an octopus that follows your cursor"></canvas>
+<div class="vig"></div><div id="ring"></div>
+<div id="hud">
+ <div class="brand">ABYSSAL <i>/ expedition 01</i></div>
+ <div id="nav"><b id="zn">01</b> / 08 &nbsp;<span id="zl">Ocean Surface</span></div>
+ <div id="meter"><div id="mk"><span id="mkv">000 M</span></div></div>
+ <div id="story"><div class="tag rv" id="tag"></div><h2 class="rv" id="h"></h2><p class="rv" id="sub"></p><button id="up">Return to surface ↑</button></div>
+ <div id="data">
+  <div id="big">000<small>M</small></div>
+  <dl><dt>Water temp</dt><dd id="temp"></dd><dt>Visibility</dt><dd id="vis"></dd><dt>Pressure</dt><dd id="pr"></dd><dt>Light</dt><dd id="lt"></dd><dt>Position</dt><dd id="co"></dd><dt>Behavior</dt><dd id="bh"></dd></dl>
+ </div>
+ <div id="hint"><span></span>Scroll to dive · move to guide</div>
+ <div id="bar"><i id="barf"></i></div>
+</div>
+<div id="track"></div>
+<script type="module" src="/src/main.js"></script>
+</body></html>
